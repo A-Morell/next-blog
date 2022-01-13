@@ -1,3 +1,3 @@
-function ConstactPage() {}
+function ContactPage() {}
 
 export default ContactPage;
