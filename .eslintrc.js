@@ -10,7 +10,13 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: ['plugin:react/recommended', 'standard', 'prettier'],
+  extends: [
+    'plugin:react/recommended',
+    'standard',
+    'prettier',
+    'eslint:recommended',
+    'next'
+  ],
   parserOptions: {
     ecmaFeatures: {
       jsx: true
@@ -21,6 +27,7 @@ module.exports = {
   plugins: ['react'],
   rules: {
     'react/prop-types': RULES.OFF,
-    'react/react-in-jsx-scope': RULES.OFF
+    'react/react-in-jsx-scope': RULES.OFF,
+    'react/no-children-prop': RULES.OFF
   }
 };
